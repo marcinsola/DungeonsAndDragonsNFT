@@ -10,9 +10,10 @@ require("./tasks/accounts")
 require("./tasks/balance")
 require("./tasks/withdraw-link")
 require("./tasks/block-number")
+require("./tasks/dungeons-dragons")
 require("@appliedblockchain/chainlink-plugins-fund-link")
-
 require('dotenv').config()
+
 
 const MAINNET_RPC_URL = process.env.MAINNET_RPC_URL || process.env.ALCHEMY_MAINNET_RPC_URL || "https://eth-mainnet.alchemyapi.io/v2/your-api-key"
 const RINKEBY_RPC_URL = process.env.RINKEBY_RPC_URL || "https://eth-rinkeby.alchemyapi.io/v2/your-api-key"
@@ -37,10 +38,10 @@ module.exports = {
         },
         kovan: {
             url: KOVAN_RPC_URL,
-             accounts: [PRIVATE_KEY],
+            accounts: [PRIVATE_KEY],
             //accounts: {
-           //     mnemonic: MNEMONIC,
-           // },
+            //     mnemonic: MNEMONIC,
+            // },
             saveDeployments: true,
         },
         rinkeby: {
