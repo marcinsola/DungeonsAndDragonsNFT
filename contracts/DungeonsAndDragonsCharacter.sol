@@ -15,7 +15,7 @@ contract DungeonsAndDragonsCharacter is ERC721URIStorage, VRFConsumerBase {
     struct Character {
         int256 strength;
         uint256 dexterity;
-        uint256 consitution;
+        uint256 constitution;
         uint256 intelligence;
         uint256 wisdom;
         uint256 charisma;
@@ -92,6 +92,10 @@ contract DungeonsAndDragonsCharacter is ERC721URIStorage, VRFConsumerBase {
 
         characters.push(character);
         _safeMint(requestToSender[requestId], newId);
+    }
+
+    function getNumberOfCharacters() public view returns (uint256) {
+        return characters.length;
     }
 
     function getLatestPrice() public view returns (int256) {

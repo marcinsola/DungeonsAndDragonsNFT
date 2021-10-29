@@ -1,0 +1,1 @@
+{"name":"InsertNameHere","description":"","image":"","attributes":[{"trait_type":"Strength","value":437},{"trait_type":"Dexterity","value":52},{"trait_type":"Constitution","value":18},{"trait_type":"Intelligence","value":78},{"trait_type":"Wisdom","value":34},{"trait_type":"Charisma","value":96},{"trait_type":"Experience","value":0}]}
